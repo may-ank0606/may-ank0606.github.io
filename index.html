@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -90,7 +89,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text readability */
+            background: rgba(0, 0, 0, 0.5);
             z-index: 1;
         }
 
@@ -637,12 +636,10 @@
             }
         }
 
-        /* Scroll behavior */
         html {
             scroll-behavior: smooth;
         }
 
-        /* Loading animation */
         .loading {
             position: fixed;
             top: 0;
@@ -675,15 +672,24 @@
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
+
+        .highlight-badge {
+            display: inline-block;
+            background: linear-gradient(45deg, #10b981, #059669);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-left: 0.5rem;
+        }
     </style>
 </head>
 <body>
-    <!-- Loading Screen -->
     <div class="loading" id="loading">
         <div class="spinner"></div>
     </div>
 
-    <!-- Navigation -->
     <nav>
         <div class="container">
             <div class="logo">Mayank Arya</div>
@@ -698,15 +704,15 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="particles"></div>
         <div class="hero-content">
             <h1>Mayank Arya</h1>
-            <p class="subtitle">Machine Learning Engineer & AI Specialist</p>
+            <p class="subtitle">AI/ML Developer & AI Platform Architect</p>
             <p class="hero-description">
-                Passionate ML engineer with expertise in deep learning, computer vision, and NLP. 
-                Experienced in developing and deploying cutting-edge AI solutions using PyTorch, TensorFlow, and modern MLOps practices.
+                Passionate AI/ML developer specializing in building intelligent platforms and solutions. 
+                Expert in deep learning, LLMs, RAG systems, and developing production-ready AI applications 
+                including event management platforms and AI-powered recommendation systems.
             </p>
             <div class="cta-buttons">
                 <a href="#projects" class="btn btn-primary">View My Work</a>
@@ -715,7 +721,6 @@
         </div>
     </section>
 
-    <!-- About Section -->
     <section id="about" class="fade-in">
         <div class="container">
             <h2 class="section-title">About Me</h2>
@@ -724,29 +729,29 @@
                     <div class="profile-img">MA</div>
                 </div>
                 <div class="about-text">
-                    <h3>Innovative ML Engineer</h3>
+                    <h3>Innovative AI/ML Developer</h3>
                     <p>
-                        I'm a passionate machine learning engineer with extensive experience in deep learning, 
-                        computer vision, and natural language processing. My expertise spans across developing 
-                        innovative AI solutions from research to production deployment.
+                        I'm a passionate AI/ML developer with extensive experience in building intelligent platforms 
+                        and applications. My expertise spans from developing event management systems to creating 
+                        AI-powered recommendation chatbots that integrate with e-commerce platforms.
                     </p>
                     <p>
                         Currently pursuing Bachelor of Technology in Artificial Intelligence - Data Science, 
-                        I have hands-on experience with cutting-edge technologies like diffusion models, 
-                        YOLO object detection, and retrieval-augmented generation systems.
+                        I specialize in developing production-ready AI solutions including RAG systems, diffusion models, 
+                        computer vision applications, and intelligent recommendation engines. I've successfully built 
+                        platforms like WareSport (event management) and Tesa (AI shopping assistant).
                     </p>
                     <div class="contact-info">
                         <a href="mailto:mayankarya736@gmail.com">📧 mayankarya736@gmail.com</a>
                         <a href="tel:+918287685215">📱 +91 8287685215</a>
                         <a href="https://github.com/may-ank0606" target="_blank">🔗 GitHub</a>
-                        <a href="#" target="_blank">💼 LinkedIn</a>
+                        <a href="https://www.linkedin.com/in/mayank-arya-819ba9286/" target="_blank">💼 LinkedIn</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
     <section id="skills" class="fade-in">
         <div class="container">
             <h2 class="section-title">Technical Skills</h2>
@@ -759,16 +764,19 @@
                         <span class="skill-tag">TensorFlow</span>
                         <span class="skill-tag">Keras</span>
                         <span class="skill-tag">Scikit-learn</span>
+                        <span class="skill-tag">FastAPI</span>
+                        <span class="skill-tag">Flask</span>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3>Data & Visualization</h3>
+                    <h3>AI & LLMs</h3>
                     <div class="skill-tags">
-                        <span class="skill-tag">Pandas</span>
-                        <span class="skill-tag">NumPy</span>
-                        <span class="skill-tag">Matplotlib</span>
-                        <span class="skill-tag">SQL</span>
-                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">LLMs</span>
+                        <span class="skill-tag">RAG Systems</span>
+                        <span class="skill-tag">Google Gemini</span>
+                        <span class="skill-tag">OpenAI</span>
+                        <span class="skill-tag">Prompt Engineering</span>
+                        <span class="skill-tag">LangChain</span>
                     </div>
                 </div>
                 <div class="skill-category">
@@ -779,6 +787,7 @@
                         <span class="skill-tag">RNNs</span>
                         <span class="skill-tag">GANs</span>
                         <span class="skill-tag">Diffusion Models</span>
+                        <span class="skill-tag">Transfer Learning</span>
                     </div>
                 </div>
                 <div class="skill-category">
@@ -787,38 +796,87 @@
                         <span class="skill-tag">OpenCV</span>
                         <span class="skill-tag">YOLO</span>
                         <span class="skill-tag">SAM</span>
-                        <span class="skill-tag">LLMs</span>
-                        <span class="skill-tag">RAG</span>
+                        <span class="skill-tag">NLP</span>
+                        <span class="skill-tag">Transformers</span>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3>Tools & Development</h3>
+                    <h3>Data & Databases</h3>
                     <div class="skill-tags">
-                        <span class="skill-tag">Jupyter Notebook</span>
-                        <span class="skill-tag">VS Code</span>
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">Gradio</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">MySQL</span>
                         <span class="skill-tag">FAISS</span>
+                        <span class="skill-tag">Vector DBs</span>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3>Soft Skills</h3>
+                    <h3>Development & Deployment</h3>
                     <div class="skill-tags">
-                        <span class="skill-tag">Problem Solving</span>
-                        <span class="skill-tag">Analytical Thinking</span>
-                        <span class="skill-tag">Collaboration</span>
-                        <span class="skill-tag">Communication</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Gradio</span>
+                        <span class="skill-tag">Streamlit</span>
+                        <span class="skill-tag">REST APIs</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
     <section id="projects" class="fade-in">
         <div class="container">
             <h2 class="section-title">Featured Projects</h2>
             <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-title">WareSport <span class="highlight-badge">NEW</span></div>
+                        <div class="project-subtitle">AI-Powered Event Management Platform</div>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-description">
+                            A comprehensive event management and scheduling platform with intelligent automation. 
+                            Features include automated event scheduling, participant management, real-time notifications, 
+                            and AI-powered recommendations for optimal event planning and resource allocation.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">AI Scheduling</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/may-ank0606" class="project-link link-github">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-title">Tesa AI Shopping Assistant <span class="highlight-badge">NEW</span></div>
+                        <div class="project-subtitle">Intelligent Product Recommendation Chatbot</div>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-description">
+                            An advanced AI-powered chatbot that provides personalized product recommendations from e-commerce platforms. 
+                            Utilizes RAG architecture and LLMs to understand user preferences and deliver relevant product suggestions 
+                            with real-time pricing and availability information.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">LLMs</span>
+                            <span class="tech-tag">RAG</span>
+                            <span class="tech-tag">E-commerce API</span>
+                            <span class="tech-tag">LangChain</span>
+                            <span class="tech-tag">FAISS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/may-ank0606" class="project-link link-github">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="project-card">
                     <div class="project-header">
                         <div class="project-title">Prompt-Driven Image Synthesis</div>
@@ -955,14 +1013,33 @@
         </div>
     </section>
 
-    <!-- Experience Section -->
     <section id="experience" class="fade-in">
         <div class="container">
             <h2 class="section-title">Professional Experience</h2>
             <div class="experience-timeline">
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <div class="timeline-date">July 2024 - Present</div>
+                        <div class="timeline-date">July 2025 - Present</div>
+                        <h3 class="timeline-title">AI/ML Developer</h3>
+                        <div class="timeline-company">Building AI-Powered Platforms</div>
+                        <p>
+                            Leading the development of innovative AI-powered platforms including event management systems 
+                            and intelligent recommendation chatbots. Focused on creating production-ready solutions that 
+                            leverage LLMs, RAG architecture, and advanced ML techniques.
+                        </p>
+                        <ul style="margin-top: 1rem; padding-left: 1.5rem;">
+                            <li>Developed WareSport: AI-powered event management and scheduling platform with intelligent automation</li>
+                            <li>Built Tesa: Advanced AI shopping assistant chatbot with product recommendations from e-commerce platforms</li>
+                            <li>Implemented RAG systems for context-aware responses and personalized recommendations</li>
+                            <li>Integrated multiple LLMs and APIs for seamless user experiences</li>
+                            <li>Designed scalable architecture for handling real-time user interactions</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">July 2024 - June 2025</div>
                         <h3 class="timeline-title">Machine Learning Intern</h3>
                         <div class="timeline-company">Qubitnets Technologies</div>
                         <p>
@@ -999,7 +1076,6 @@
         </div>
     </section>
 
-    <!-- Education Section -->
     <section id="education" class="fade-in">
         <div class="container">
             <h2 class="section-title">Education</h2>
@@ -1024,13 +1100,12 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="contact-section fade-in">
         <div class="container">
             <div class="contact-content">
                 <h2 class="section-title" style="color: white;">Let's Work Together</h2>
                 <p style="font-size: 1.2rem; margin-bottom: 2rem;">
-                    Interested in collaborating on exciting ML projects or discussing opportunities? 
+                    Interested in collaborating on exciting AI/ML projects or discussing opportunities? 
                     I'd love to hear from you!
                 </p>
                 
@@ -1074,7 +1149,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="social-links">
@@ -1092,19 +1166,17 @@
                 </a>
             </div>
             <p>© 2024 Mayank Arya. All rights reserved.</p>
-            <p style="margin-top: 0.5rem; opacity: 0.8;">Machine Learning Engineer | AI Specialist | Innovation Enthusiast</p>
+            <p style="margin-top: 0.5rem; opacity: 0.8;">AI/ML Developer | Platform Architect | Innovation Enthusiast</p>
         </div>
     </footer>
 
     <script>
-        // Loading screen
         window.addEventListener('load', function() {
             setTimeout(() => {
                 document.getElementById('loading').classList.add('hidden');
             }, 1000);
         });
 
-        // Create floating particles
         function createParticles() {
             const particlesContainer = document.querySelector('.particles');
             const particleCount = 50;
@@ -1120,7 +1192,6 @@
             }
         }
 
-        // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -1134,7 +1205,6 @@
             });
         });
 
-        // Intersection Observer for fade-in animations
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
@@ -1148,38 +1218,28 @@
             });
         }, observerOptions);
 
-        // Observe all fade-in elements
         document.querySelectorAll('.fade-in').forEach(el => {
             observer.observe(el);
         });
 
-        // Contact form handling
         document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
             
-            // Get form data
             const formData = new FormData(this);
             const name = formData.get('name');
             const email = formData.get('email');
             const subject = formData.get('subject');
             const message = formData.get('message');
             
-            // Create mailto link
             const mailtoLink = `mailto:mayankarya736@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
                 `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
             )}`;
             
-            // Open email client
             window.location.href = mailtoLink;
-            
-            // Show confirmation
             alert('Thank you for your message! Your email client should open now.');
-            
-            // Reset form
             this.reset();
         });
 
-        // Navbar background on scroll
         window.addEventListener('scroll', function() {
             const nav = document.querySelector('nav');
             if (window.scrollY > 100) {
@@ -1191,7 +1251,6 @@
             }
         });
 
-        // Project card hover effects
         document.querySelectorAll('.project-card').forEach(card => {
             card.addEventListener('mouseenter', function() {
                 this.style.transform = 'translateY(-10px) scale(1.02)';
@@ -1202,7 +1261,6 @@
             });
         });
 
-        // Skill tags animation on hover
         document.querySelectorAll('.skill-tag').forEach(tag => {
             tag.addEventListener('mouseenter', function() {
                 this.style.transform = 'scale(1.1)';
@@ -1215,10 +1273,8 @@
             });
         });
 
-        // Initialize particles
         createParticles();
 
-        // Add dynamic typing effect to hero subtitle
         function typeWriter(element, text, speed = 100) {
             let i = 0;
             element.innerHTML = '';
@@ -1234,14 +1290,12 @@
             type();
         }
 
-        // Start typing effect after page loads
         setTimeout(() => {
             const subtitle = document.querySelector('.hero .subtitle');
             const originalText = subtitle.textContent;
             typeWriter(subtitle, originalText, 80);
         }, 1500);
 
-        // Add parallax effect to hero section
         window.addEventListener('scroll', function() {
             const scrolled = window.pageYOffset;
             const parallax = document.querySelector('.hero');
@@ -1252,25 +1306,6 @@
             }
         });
 
-        // Add counter animation for statistics (can be extended)
-        function animateCounter(element, target, duration = 2000) {
-            let start = 0;
-            const increment = target / (duration / 16);
-            
-            function updateCounter() {
-                start += increment;
-                if (start < target) {
-                    element.textContent = Math.floor(start);
-                    requestAnimationFrame(updateCounter);
-                } else {
-                    element.textContent = target;
-                }
-            }
-            
-            updateCounter();
-        }
-
-        // Mobile menu toggle (basic implementation)
         function createMobileMenu() {
             const nav = document.querySelector('nav .container');
             const menuButton = document.createElement('button');
@@ -1284,7 +1319,6 @@
                 cursor: pointer;
             `;
             
-            // Add mobile styles
             const mobileStyles = document.createElement('style');
             mobileStyles.textContent = `
                 @media (max-width: 768px) {
@@ -1318,10 +1352,8 @@
             nav.appendChild(menuButton);
         }
 
-        // Initialize mobile menu
         createMobileMenu();
 
-        // Add smooth reveal animation for timeline items
         const timelineObserver = new IntersectionObserver(function(entries) {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -1338,8 +1370,8 @@
             timelineObserver.observe(item);
         });
 
-        console.log('🚀 Mayank Arya\'s Portfolio Loaded Successfully!');
-        console.log('💼 Ready to showcase amazing ML projects!');
+        console.log('🚀 Mayank Arya\'s Enhanced Portfolio Loaded Successfully!');
+        console.log('💼 Showcasing AI/ML platforms and innovative projects!');
     </script>
 </body>
 </html>
